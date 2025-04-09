@@ -189,6 +189,9 @@ def load_data(filename="addressbook.pkl"):
   except FileNotFoundError:
     return AddressBook()  # Повернення нової адресної книги, якщо файл не знайдено
 
+def test(book: AddressBook):
+  pass
+
 def main():
   book = load_data()
   print("Welcome to the assistant bot!")
@@ -214,7 +217,9 @@ def main():
     elif command == "show-birthday":
       print(show_birthday(args, book))
     elif command == "birthdays":
-      print(birthdays(book))         
+      print(birthdays(book))
+    elif command == "test":
+      print(test(book))
     else:
       print("Invalid command.")
         
