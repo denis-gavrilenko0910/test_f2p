@@ -192,6 +192,9 @@ def load_data(filename="addressbook.pkl"):
 def test(book: AddressBook):
   pass
 
+def test_two(book: AddressBook):
+  pass
+
 def main():
   book = load_data()
   print("Welcome to the assistant bot!")
